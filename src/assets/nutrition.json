@@ -9,7 +9,8 @@
       "carbs": 48,
       "fiber": 5,
       "suger": 2,
-      "protein": 8
+      "protein": 8,
+      "type": "greens & grains"
     },
     {
       "name": "Saffron Basmati Rice",
@@ -21,7 +22,8 @@
       "carbs": 54,
       "fiber": 2,
       "suger": 0,
-      "protein": 6
+      "protein": 6,
+      "type": "greens & grains"
     },
     {
       "name": "RightRice",
@@ -33,7 +35,8 @@
       "carbs": 53,
       "fiber": 9,
       "suger": 0,
-      "protein": 18
+      "protein": 18,
+      "type": "greens & grains"
     },
     {
       "name": "Black Lentils",
@@ -45,7 +48,8 @@
       "carbs": 37,
       "fiber": 15,
       "suger": 3,
-      "protein": 17
+      "protein": 17,
+      "type": "greens & grains"
     },
     {
       "name": "SuperGreens",
@@ -57,7 +61,8 @@
       "carbs": 8,
       "fiber": 4,
       "suger": 3,
-      "protein": 3
+      "protein": 3,
+      "type": "greens & grains"
     },
     {
       "name": "Arugula",
@@ -69,7 +74,8 @@
       "carbs": 3,
       "fiber": 1,
       "suger": 2,
-      "protein": 2
+      "protein": 2,
+      "type": "greens & grains"
     },
     {
       "name": "Baby Spinach",
@@ -81,7 +87,8 @@
       "carbs": 3,
       "fiber": 2,
       "suger": 0,
-      "protein": 3
+      "protein": 3,
+      "type": "greens & grains"
     },
     {
       "name": "Romaine",
@@ -93,7 +100,8 @@
       "carbs": 4,
       "fiber": 3,
       "suger": 1,
-      "protein": 1
+      "protein": 1,
+      "type": "greens & grains"
     },
     {
       "name": "Splendid Greens",
@@ -105,7 +113,8 @@
       "carbs": 4,
       "fiber": 3,
       "suger": 1,
-      "protein": 1
+      "protein": 1,
+      "type": "greens & grains"
     },
     {
       "name": "Braised Lamb",
@@ -117,7 +126,8 @@
       "carbs": 2,
       "fiber": 1,
       "suger": 0,
-      "protein": 24
+      "protein": 24,
+      "type": "mains"
     },
     {
       "name": "Grilled Chicken",
@@ -129,7 +139,8 @@
       "carbs": 3,
       "fiber": 1,
       "suger": 0,
-      "protein": 28
+      "protein": 28,
+      "type": "mains"
     },
     {
       "name": "Falafel",
@@ -141,7 +152,8 @@
       "carbs": 24,
       "fiber": 5,
       "suger": 3,
-      "protein": 6
+      "protein": 6,
+      "type": "mains"
     },
     {
       "name": "Roasted White Sweet Potatoes",
@@ -153,7 +165,8 @@
       "carbs": 35,
       "fiber": 6,
       "suger": 9,
-      "protein": 3
+      "protein": 3,
+      "type": "mains"
     },
     {
       "name": "Harissa Honey Chicken",
@@ -165,7 +178,8 @@
       "carbs": 7,
       "fiber": 2,
       "suger": 3,
-      "protein": 26
+      "protein": 26,
+      "type": "mains"
     },
     {
       "name": "Roasted Vegetables",
@@ -177,7 +191,8 @@
       "carbs": 14,
       "fiber": 5,
       "suger": 5,
-      "protein": 3
+      "protein": 3,
+      "type": "mains"
     },
     {
       "name": "Spicy Lamb Meatballs",
@@ -189,7 +204,8 @@
       "carbs": 3,
       "fiber": 1,
       "suger": 1,
-      "protein": 24
+      "protein": 24,
+      "type": "mains"
     },
     {
       "name": "Shredded Romaine",
@@ -201,7 +217,8 @@
       "carbs": 1,
       "fiber": 0,
       "suger": 0,
-      "protein": 0
+      "protein": 0,
+      "type": "toppings"
     },
     {
       "name": "Pita Crisps",
@@ -213,7 +230,8 @@
       "carbs": 10,
       "fiber": 1,
       "suger": 1,
-      "protein": 1
+      "protein": 1,
+      "type": "toppings"
     },
     {
       "name": "Cabbage Slaw",
@@ -225,7 +243,8 @@
       "carbs": 2,
       "fiber": 1,
       "suger": 1,
-      "protein": 0
+      "protein": 0,
+      "type": "toppings"
     },
     {
       "name": "Tomato + Onion",
@@ -237,7 +256,8 @@
       "carbs": 2,
       "fiber": 0,
       "suger": 1,
-      "protein": 0
+      "protein": 0,
+      "type": "toppings"
     },
     {
       "name": "Persian Cucumber",
@@ -249,7 +269,8 @@
       "carbs": 1,
       "fiber": 0,
       "suger": 1,
-      "protein": 0
+      "protein": 0,
+      "type": "toppings"
     },
     {
       "name": "Tomato + Cucumber",
@@ -261,7 +282,8 @@
       "carbs": 2,
       "fiber": 0,
       "suger": 1,
-      "protein": 0
+      "protein": 0,
+      "type": "toppings"
     },
     {
       "name": "Kalamata Olives",
@@ -273,7 +295,8 @@
       "carbs": 2,
       "fiber": 0,
       "suger": 0,
-      "protein": 0
+      "protein": 0,
+      "type": "toppings"
     },
     {
       "name": "Lentil Tabbouleh",
@@ -285,7 +308,8 @@
       "carbs": 7,
       "fiber": 3,
       "suger": 0,
-      "protein": 3
+      "protein": 3,
+      "type": "toppings"
     },
     {
       "name": "Pickled Onions",
@@ -297,7 +321,8 @@
       "carbs": 5,
       "fiber": 0,
       "suger": 4,
-      "protein": 0
+      "protein": 0,
+      "type": "toppings"
     },
     {
       "name": "Salt Brined Pickles",
@@ -309,7 +334,8 @@
       "carbs": 0,
       "fiber": 0,
       "suger": 0,
-      "protein": 0
+      "protein": 0,
+      "type": "toppings"
     },
     {
       "name": "Crumbled Feta",
@@ -321,7 +347,8 @@
       "carbs": 0,
       "fiber": 0,
       "suger": 1,
-      "protein": 3
+      "protein": 3,
+      "type": "toppings"
     },
     {
       "name": "Fire-Roasted Corn",
@@ -333,7 +360,8 @@
       "carbs": 5,
       "fiber": 1,
       "suger": 2,
-      "protein": 1
+      "protein": 1,
+      "type": "toppings"
     },
     {
       "name": "Avocado",
@@ -345,7 +373,8 @@
       "carbs": 9,
       "fiber": 7,
       "suger": 1,
-      "protein": 2
+      "protein": 2,
+      "type": "toppings"
     },
     {
       "name": "Tzatziki",
@@ -357,7 +386,8 @@
       "carbs": 1,
       "fiber": 0,
       "suger": 1,
-      "protein": 2
+      "protein": 2,
+      "type": "dips + spreads"
     },
     {
       "name": "Hummus",
@@ -369,7 +399,8 @@
       "carbs": 4,
       "fiber": 1,
       "suger": 0,
-      "protein": 1
+      "protein": 1,
+      "type": "dips + spreads"
     },
     {
       "name": "Roasted Eggplant",
@@ -381,7 +412,8 @@
       "carbs": 2,
       "fiber": 1,
       "suger": 0,
-      "protein": 0
+      "protein": 0,
+      "type": "dips + spreads"
     },
     {
       "name": "Crazy Feta",
@@ -393,7 +425,8 @@
       "carbs": 1,
       "fiber": 0,
       "suger": 0,
-      "protein": 3
+      "protein": 3,
+      "type": "dips + spreads"
     },
     {
       "name": "Harissa",
@@ -405,7 +438,8 @@
       "carbs": 5,
       "fiber": 1,
       "suger": 2,
-      "protein": 1
+      "protein": 1,
+      "type": "dips + spreads"
     },
     {
       "name": "Red Pepper Hummus",
@@ -417,7 +451,8 @@
       "carbs": 4,
       "fiber": 1,
       "suger": 1,
-      "protein": 1
+      "protein": 1,
+      "type": "dips + spreads"
     },
     {
       "name": "Preserved Lemon Vinaigrette",
@@ -429,7 +464,8 @@
       "carbs": 1,
       "fiber": 0,
       "suger": 0,
-      "protein": 0
+      "protein": 0,
+      "type": "dressings"
     },
     {
       "name": "Yogurt Dill",
@@ -441,7 +477,8 @@
       "carbs": 1,
       "fiber": 0,
       "suger": 0,
-      "protein": 2
+      "protein": 2,
+      "type": "dressings"
     },
     {
       "name": "Lemon-Herb Tahini",
@@ -453,7 +490,8 @@
       "carbs": 4,
       "fiber": 2,
       "suger": 0,
-      "protein": 2
+      "protein": 2,
+      "type": "dressings"
     },
     {
       "name": "Tahini Caesar",
@@ -465,7 +503,8 @@
       "carbs": 3,
       "fiber": 1,
       "suger": 0,
-      "protein": 2
+      "protein": 2,
+      "type": "dressings"
     },
     {
       "name": "Greek Vanaigrette",
@@ -477,7 +516,8 @@
       "carbs": 1,
       "fiber": 0,
       "suger": 0,
-      "protein": 0
+      "protein": 0,
+      "type": "dressings"
     },
     {
       "name": "Skhug",
@@ -489,7 +529,8 @@
       "carbs": 1,
       "fiber": 0,
       "suger": 0,
-      "protein": 0
+      "protein": 0,
+      "type": "dressings"
     },
     {
       "name": "Hot Harissa Vinaigrette",
@@ -501,7 +542,8 @@
       "carbs": 2,
       "fiber": 0,
       "suger": 1,
-      "protein": 0
+      "protein": 0,
+      "type": "dressings"
     },
     {
       "name": "Garlic Dressing",
@@ -513,6 +555,7 @@
       "carbs": 0,
       "fiber": 0,
       "suger": 0,
-      "protein": 0
+      "protein": 0,
+      "type": "dressings"
     }
    ]
