@@ -18,8 +18,12 @@ export default function Homepage(){
  const changeHandler = (e) => {
   let value = nutrition.find(nutrition => nutrition.name === e);
   console.log(value)
-  setAllValues({...allValues, value})
+  setAllValues((allValues) => ({
+    ...allValues,
+    calories: allValues.calories + value.calories,
+}));
 }
+
 console.log(allValues)
     return(
       <div>
