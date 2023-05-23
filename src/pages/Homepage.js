@@ -23,6 +23,7 @@ export default function Homepage(){
     calories: allValues.calories + value.calories,
     fat: allValues.fat + value.fat,
     satFat: allValues.satFat + value.satFat,
+    transFat: allValues.transFat + value.transFat,
     cholesterol: allValues.cholesterol + value.cholesterol,
     sodium: allValues.sodium + value.sodium,
     carbs: allValues.carbs + value.carbs,
