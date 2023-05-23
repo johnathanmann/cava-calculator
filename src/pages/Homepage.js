@@ -21,6 +21,14 @@ export default function Homepage(){
   setAllValues((allValues) => ({
     ...allValues,
     calories: allValues.calories + value.calories,
+    fat: allValues.fat + value.fat,
+    satFat: allValues.satFat + value.satFat,
+    cholesterol: allValues.cholesterol + value.cholesterol,
+    sodium: allValues.sodium + value.sodium,
+    carbs: allValues.carbs + value.carbs,
+    fiber: allValues.fiber + value.fiber,
+    sugar: allValues.sugar + value.sugar,
+    protein: allValues.protein + value.protein
 }));
 }
 
