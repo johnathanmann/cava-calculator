@@ -1,6 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import { Dropdown } from "react-bootstrap";
 import "../styles/styles.css";
 import nutrition from "../assets/nutrition.json"
+
+let greens = nutrition.filter(x => x.type === "greens & grains");
 
 export default function Homepage(){
   const [allValues, setAllValues] = useState({
@@ -34,12 +37,20 @@ export default function Homepage(){
 }
 
 
-console.log(allValues)
+console.log(greens)
     return(
       <div>
         <h1>Cava Calculator</h1>
         <button onClick={() => changeHandler("Garlic Dressing")}>button</button>
         <h1>{allValues.calories}</h1>
+        <Dropdown>
+          <Dropdown.Toggle id="dropdown-basic">Greens & Grains</Dropdown.Toggle>
+          <Dropdown.Menu>
+          {greens.map((link, index)=>{
+              console.log(greens[index].name)
+                            return <Dropdown.Item>{greens[index].name}</Dropdown.Item>})}
+          </Dropdown.Menu>
+        </Dropdown>
         </div>
     )
 }
