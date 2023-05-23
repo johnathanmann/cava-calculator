@@ -33,11 +33,13 @@ export default function Homepage(){
 }));
 }
 
+
 console.log(allValues)
     return(
       <div>
         <h1>Cava Calculator</h1>
-        <button onClick={() => changeHandler("salad")}>button</button>
+        <button onClick={() => changeHandler("Garlic Dressing")}>button</button>
+        <h1>{allValues.calories}</h1>
         </div>
     )
 }
