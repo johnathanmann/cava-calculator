@@ -4,6 +4,10 @@ import "../styles/styles.css";
 import nutrition from "../assets/nutrition.json"
 
 let greens = nutrition.filter(x => x.type === "greens & grains");
+let mains = nutrition.filter(x => x.type === "mains");
+let toppings = nutrition.filter(x => x.type === "toppings");
+let dips = nutrition.filter(x => x.type === "dips + spreads");
+let dressings = nutrition.filter(x => x.type === "dressings");
 
 export default function Homepage(){
   const [allValues, setAllValues] = useState({
@@ -19,7 +23,7 @@ export default function Homepage(){
  });
 
  const changeHandler = (e) => {
-  let value = nutrition.find(nutrition => nutrition.name === e);
+  var value = nutrition.find(nutrition => nutrition.name === e);
   console.log(value)
   setAllValues((allValues) => ({
     ...allValues,
@@ -37,7 +41,6 @@ export default function Homepage(){
 }
 
 
-console.log(greens)
     return(
       <div>
         <h1>Cava Calculator</h1>
@@ -45,12 +48,39 @@ console.log(greens)
         <h1>{allValues.calories}</h1>
         <Dropdown>
           <Dropdown.Toggle id="dropdown-basic">Greens & Grains</Dropdown.Toggle>
-          <Dropdown.Menu>
-          {greens.map((link, index)=>{
-              console.log(greens[index].name)
-                            return <Dropdown.Item>{greens[index].name}</Dropdown.Item>})}
-          </Dropdown.Menu>
-        </Dropdown>
+            <Dropdown.Menu>
+            {greens.map((item, index)=>{
+                              return <Dropdown.Item><button onClick={() => changeHandler(greens[index].name)}>{greens[index].name}</button></Dropdown.Item>})}
+            </Dropdown.Menu>
+          </Dropdown>
+          <Dropdown>
+            <Dropdown.Toggle id="dropdown-basic">Mains</Dropdown.Toggle>
+              <Dropdown.Menu>
+              {mains.map((item, index)=>{
+                                return <Dropdown.Item><button onClick={() => changeHandler(mains[index].name)}>{mains[index].name}</button></Dropdown.Item>})}
+              </Dropdown.Menu>
+          </Dropdown>
+          <Dropdown>
+            <Dropdown.Toggle id="dropdown-basic">Toppings</Dropdown.Toggle>
+              <Dropdown.Menu>
+              {toppings.map((item, index)=>{
+                                return <Dropdown.Item><button onClick={() => changeHandler(toppings[index].name)}>{toppings[index].name}</button></Dropdown.Item>})}
+              </Dropdown.Menu>
+          </Dropdown>
+          <Dropdown>
+            <Dropdown.Toggle id="dropdown-basic">Dips + Sauces</Dropdown.Toggle>
+              <Dropdown.Menu>
+              {dips.map((item, index)=>{
+                                return <Dropdown.Item><button onClick={() => changeHandler(dips[index].name)}>{dips[index].name}</button></Dropdown.Item>})}
+              </Dropdown.Menu>
+          </Dropdown>
+          <Dropdown>
+            <Dropdown.Toggle id="dropdown-basic">Dressings</Dropdown.Toggle>
+              <Dropdown.Menu>
+              {dressings.map((item, index)=>{
+                                return  <Dropdown.Item><button onClick={() => changeHandler(dressings[index].name)}>{dressings[index].name}</button></Dropdown.Item>})}
+              </Dropdown.Menu>
+          </Dropdown>
         </div>
     )
 }
