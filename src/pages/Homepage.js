@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { Dropdown } from "react-bootstrap";
 import "../styles/styles.css";
-import nutrition from "../assets/nutrition.json"
+import nutrition from "../assets/nutrition.json";
 
 let greens = nutrition.filter(x => x.type === "greens & grains");
 let mains = nutrition.filter(x => x.type === "mains");
@@ -42,45 +41,12 @@ export default function Homepage(){
 
 
     return(
-      <div>
-        <h1>Cava Calculator</h1>
-        <button onClick={() => changeHandler("Garlic Dressing")}>button</button>
-        <h1>{allValues.calories}</h1>
-        <Dropdown>
-          <Dropdown.Toggle id="dropdown-basic">Greens & Grains</Dropdown.Toggle>
-            <Dropdown.Menu>
+      <main>
+        <header>
+            <h1>Cava Calculator</h1>
+        </header>
             {greens.map((item, index)=>{
-                              return <Dropdown.Item><button onClick={() => changeHandler(greens[index].name)}>{greens[index].name}</button></Dropdown.Item>})}
-            </Dropdown.Menu>
-          </Dropdown>
-          <Dropdown>
-            <Dropdown.Toggle id="dropdown-basic">Mains</Dropdown.Toggle>
-              <Dropdown.Menu>
-              {mains.map((item, index)=>{
-                                return <Dropdown.Item><button onClick={() => changeHandler(mains[index].name)}>{mains[index].name}</button></Dropdown.Item>})}
-              </Dropdown.Menu>
-          </Dropdown>
-          <Dropdown>
-            <Dropdown.Toggle id="dropdown-basic">Toppings</Dropdown.Toggle>
-              <Dropdown.Menu>
-              {toppings.map((item, index)=>{
-                                return <Dropdown.Item><button onClick={() => changeHandler(toppings[index].name)}>{toppings[index].name}</button></Dropdown.Item>})}
-              </Dropdown.Menu>
-          </Dropdown>
-          <Dropdown>
-            <Dropdown.Toggle id="dropdown-basic">Dips + Sauces</Dropdown.Toggle>
-              <Dropdown.Menu>
-              {dips.map((item, index)=>{
-                                return <Dropdown.Item><button onClick={() => changeHandler(dips[index].name)}>{dips[index].name}</button></Dropdown.Item>})}
-              </Dropdown.Menu>
-          </Dropdown>
-          <Dropdown>
-            <Dropdown.Toggle id="dropdown-basic">Dressings</Dropdown.Toggle>
-              <Dropdown.Menu>
-              {dressings.map((item, index)=>{
-                                return  <Dropdown.Item><button onClick={() => changeHandler(dressings[index].name)}>{dressings[index].name}</button></Dropdown.Item>})}
-              </Dropdown.Menu>
-          </Dropdown>
-        </div>
+                              return <button className="toggler" onClick={() => changeHandler(greens[index].name)}>{greens[index].name}</button>})}  
+        </main>
     )
 }

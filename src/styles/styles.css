@@ -1,0 +1,23 @@
+:root{
+    --light: #FFF8E8;
+    --tan: #F4EAD6;
+    --yellow: #F3D03E;
+}
+
+body{
+    background-color: var(--light) !important;
+}
+
+button{
+    all: unset !important;
+}
+
+.toggler{
+    border: 1px solid #000 !important;
+    background-color: #fff !important;
+}
+
+.btn::after{
+    content: none !important;
+}
+
