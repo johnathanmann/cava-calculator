@@ -42,7 +42,7 @@ console.log(allValues)
 
     return(
       <div>
-        <header>
+        <header id="header">
             <h1>CAVA Calculator</h1>
         </header>
         <main>
@@ -54,16 +54,24 @@ console.log(allValues)
             </section>
           </article>
           <article id="nutrition-article">
-            <p>Calories :{allValues.calories}</p>
-            <p>Fat: {allValues.fat}</p>
-            <p>SatFat: {allValues.satFat}</p>
-            <p>transFat: {allValues.transFat}</p>
-            <p>Cholestreol: {allValues.cholesterol}</p>
-            <p>sodium: {allValues.sodium}</p>
-            <p>carbs: {allValues.carbs}</p>
-            <p>fiber: {allValues.fiber}</p>
-            <p>sugar: {allValues.sugar}</p>
-            <p>Protein: {allValues.protein}</p>
+            <div id="nutrition">
+              <header>
+                <h1>Nutritional Information</h1>
+                <p>1 servings per container</p>
+                <p className="inline">Serving sizes</p> <p className="inline">1 bowl</p>
+              </header>
+              <p id="top-border">Amount per serving</p>
+              <p className="inline" id="calories">Calories</p> <p className="inline">{allValues.calories}</p>
+              <p>Fat: {allValues.fat}</p>
+              <p>SatFat: {allValues.satFat}</p>
+              <p>transFat: {allValues.transFat}</p>
+              <p>Cholestreol: {allValues.cholesterol}</p>
+              <p>sodium: {allValues.sodium}</p>
+              <p>carbs: {allValues.carbs}</p>
+              <p>fiber: {allValues.fiber}</p>
+              <p>sugar: {allValues.sugar}</p>
+              <p>Protein: {allValues.protein}</p>
+            </div>
           </article>
         </main>          
         </div>
