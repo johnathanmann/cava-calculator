@@ -68,7 +68,7 @@ main{
     background-color: #fefcf8;
     border: solid 1px #000;
     width: fit-content;
-    margin: 20px;
+    margin: 20px 50px;
 }
 
 #nutrition header{
@@ -122,4 +122,8 @@ main{
     border-bottom: solid 1px #000;
     padding: 5px 10px 5px 30px;
     margin: auto 10px;
+}
+
+#protein{
+    border: none;
 }

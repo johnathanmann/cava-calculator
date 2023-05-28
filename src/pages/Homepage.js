@@ -66,12 +66,12 @@ console.log(allValues)
               <p className="nutrition-item">Total Fat <span>{allValues.fat}</span></p>
               <p className="nutrition-item-indent">Saturated Fat <span>{allValues.satFat}g</span></p>
               <p className="nutrition-item-indent">Trans Fat <span>{allValues.transFat}g</span></p>
-              <p>Cholestreol: {allValues.cholesterol}</p>
-              <p>sodium: {allValues.sodium}</p>
-              <p>carbs: {allValues.carbs}</p>
-              <p>fiber: {allValues.fiber}</p>
-              <p>sugar: {allValues.sugar}</p>
-              <p>Protein: {allValues.protein}</p>
+              <p className="nutrition-item">Cholesterol <span>{allValues.cholesterol}mg</span></p>
+              <p className="nutrition-item">Sodium <span>{allValues.sodium}mg</span></p>
+              <p className="nutrition-item">Total Carbohydrate <span>{allValues.carbs}g</span></p>
+              <p className="nutrition-item-indent">Dietary Fiber <span>{allValues.fiber}g</span></p>
+              <p className="nutrition-item-indent">Total Sugars <span>{allValues.sugar}g</span></p>
+              <p className="nutrition-item" id="protein">Protien <span>{allValues.protein}g</span></p>
             </div>
           </article>
         </main>          
