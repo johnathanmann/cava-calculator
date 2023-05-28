@@ -38,8 +38,10 @@ export default function Homepage(){
     protein: allValues.protein + value.protein
 }));
 
+let i = 1;
 const list = document.getElementById('ingredient-list');
-list.append("<li>"+value.name+"</li>")
+i++
+list.innerHTML += '<li>' + value.name + '</li>'
 }
 
 
@@ -75,7 +77,8 @@ list.append("<li>"+value.name+"</li>")
               <p className="nutrition-item-indent">Total Sugars <span>{allValues.sugar}g</span></p>
               <p className="nutrition-item" id="protein">Protien <span>{allValues.protein}g</span></p>
             </div>
-            <ul id="ingredient-list"></ul>
+            <ul id="ingredient-list">
+            </ul>
           </article>
         </main>          
         </div>
