@@ -1,4 +1,5 @@
 import { useState } from "react";
+import $ from 'jquery';
 import "../styles/styles.css";
 import nutrition from "../assets/nutrition.json";
 
@@ -24,8 +25,7 @@ export default function Homepage(){
 
  const addIngredient = (e) => {
   let value = nutrition.find(nutrition => nutrition.name === e);
-  setAllValues((allValues) => ({
-    ...allValues,
+  setAllValues(() => ({
     calories: allValues.calories + value.calories,
     fat: allValues.fat + value.fat,
     satFat: allValues.satFat + value.satFat,
@@ -38,11 +38,18 @@ export default function Homepage(){
     protein: allValues.protein + value.protein
 }));
 
-let i = 1;
-const list = document.getElementById('ingredient-list');
-i++
-list.innerHTML += '<li>' + value.name + '</li>'
+$("#ingredient-list").append('<li class="remove_field">'+'<img src="'+value.img+'" />' + value.name +'</li>')
 }
+
+$(document).one('click', '.remove_field', function () {
+  var ingredient = $(this).text();
+  $(this).closest('li').remove();
+  let value = nutrition.find(nutrition => nutrition.name === ingredient);
+  console.log(allValues.calories =- value.calories)
+  setAllValues(() => ({
+    calories: allValues.calories + value.calories
+}));
+});
 
 
     return(
