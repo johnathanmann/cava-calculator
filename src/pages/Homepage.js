@@ -22,7 +22,7 @@ export default function Homepage(){
     protein: 0
  });
 
- const changeHandler = (e) => {
+ const addIngredient = (e) => {
   let value = nutrition.find(nutrition => nutrition.name === e);
   setAllValues((allValues) => ({
     ...allValues,
@@ -37,7 +37,9 @@ export default function Homepage(){
     sugar: allValues.sugar + value.sugar,
     protein: allValues.protein + value.protein
 }));
-console.log(allValues)
+
+const list = document.getElementById('ingredient-list');
+list.append("<li>"+value.name+"</li>")
 }
 
 
@@ -51,7 +53,7 @@ console.log(allValues)
             <section>
               <h2 className="section-header">GREENS & GRAINS</h2>
               {greens.map((item, index)=>{
-                return <button className="ingredient" onClick={() => changeHandler(greens[index].name)}><img src={greens[index].img}/>{greens[index].name}</button>})} 
+                return <button className="ingredient" onClick={() => addIngredient(greens[index].name)}><img src={greens[index].img}/>{greens[index].name}</button>})} 
             </section>
           </article>
           <article id="nutrition-article">
@@ -73,6 +75,7 @@ console.log(allValues)
               <p className="nutrition-item-indent">Total Sugars <span>{allValues.sugar}g</span></p>
               <p className="nutrition-item" id="protein">Protien <span>{allValues.protein}g</span></p>
             </div>
+            <ul id="ingredient-list"></ul>
           </article>
         </main>          
         </div>
