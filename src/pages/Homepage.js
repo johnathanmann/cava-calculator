@@ -13,6 +13,7 @@ export default function Homepage(){
     calories: 0,
     fat: 0,
     satFat: 0,
+    transFat: 0,
     cholesterol: 0,
     sodium: 0,
     carbs: 0,
@@ -58,13 +59,13 @@ console.log(allValues)
               <header>
                 <h1>Nutritional Information</h1>
                 <p>1 servings per container</p>
-                <p className="inline">Serving sizes</p> <p className="inline">1 bowl</p>
+                <p className="inline">Serving sizes <span>1 bowl</span></p>
               </header>
               <p id="top-border">Amount per serving</p>
-              <p className="inline" id="calories">Calories</p> <p className="inline">{allValues.calories}</p>
-              <p>Fat: {allValues.fat}</p>
-              <p>SatFat: {allValues.satFat}</p>
-              <p>transFat: {allValues.transFat}</p>
+              <p className="inline" id="calories">Calories <span>{allValues.calories}</span></p>
+              <p className="nutrition-item">Total Fat <span>{allValues.fat}</span></p>
+              <p className="nutrition-item-indent">Saturated Fat <span>{allValues.satFat}g</span></p>
+              <p className="nutrition-item-indent">Trans Fat <span>{allValues.transFat}g</span></p>
               <p>Cholestreol: {allValues.cholesterol}</p>
               <p>sodium: {allValues.sodium}</p>
               <p>carbs: {allValues.carbs}</p>
