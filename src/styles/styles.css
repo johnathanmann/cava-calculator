@@ -6,18 +6,28 @@
 
 body{
     background-color: var(--light) !important;
+    font-family: Helvetica;
 }
 
-button{
-    all: unset !important;
+main{
+    display: flex;
 }
 
-.toggler{
-    border: 1px solid #000 !important;
-    background-color: #fff !important;
+#ingredient-section{
+    width: 60vw;
 }
 
-.btn::after{
-    content: none !important;
+#nutrition-section{
+    width: 40vw;
+}
+
+@media (max-width: 768px){
+    main{
+        display: block;
+    }
+
+    #ingredient-section, #nutrition-section{
+        width: auto;
+    }
 }
 

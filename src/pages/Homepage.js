@@ -22,8 +22,7 @@ export default function Homepage(){
  });
 
  const changeHandler = (e) => {
-  var value = nutrition.find(nutrition => nutrition.name === e);
-  console.log(value)
+  let value = nutrition.find(nutrition => nutrition.name === e);
   setAllValues((allValues) => ({
     ...allValues,
     calories: allValues.calories + value.calories,
@@ -37,16 +36,36 @@ export default function Homepage(){
     sugar: allValues.sugar + value.sugar,
     protein: allValues.protein + value.protein
 }));
+console.log(allValues)
 }
 
 
     return(
-      <main>
+      <div>
         <header>
-            <h1>Cava Calculator</h1>
+            <h1>CAVA Calculator</h1>
         </header>
-            {greens.map((item, index)=>{
-                              return <button className="toggler" onClick={() => changeHandler(greens[index].name)}>{greens[index].name}</button>})}  
-        </main>
+        <main>
+          <article id="nutrition-section">
+              <p>Calories :{allValues.calories}</p>
+              <p>Fat: {allValues.fat}</p>
+              <p>SatFat: {allValues.satFat}</p>
+              <p>transFat: {allValues.transFat}</p>
+              <p>Cholestreol: {allValues.cholesterol}</p>
+              <p>sodium: {allValues.sodium}</p>
+              <p>carbs: {allValues.carbs}</p>
+              <p>fiber: {allValues.fiber}</p>
+              <p>sugar: {allValues.sugar}</p>
+              <p>Protein: {allValues.protein}</p>
+          </article>
+          <article id="ingredient-section">
+            <section>
+              <h2 className="section-header">Greens & Grains</h2>
+              {greens.map((item, index)=>{
+                return <button className="ingredient" onClick={() => changeHandler(greens[index].name)}>{greens[index].name}</button>})} 
+            </section>
+          </article>
+        </main>          
+        </div>
     )
 }
