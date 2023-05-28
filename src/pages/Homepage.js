@@ -46,24 +46,24 @@ console.log(allValues)
             <h1>CAVA Calculator</h1>
         </header>
         <main>
-          <article id="nutrition-section">
-              <p>Calories :{allValues.calories}</p>
-              <p>Fat: {allValues.fat}</p>
-              <p>SatFat: {allValues.satFat}</p>
-              <p>transFat: {allValues.transFat}</p>
-              <p>Cholestreol: {allValues.cholesterol}</p>
-              <p>sodium: {allValues.sodium}</p>
-              <p>carbs: {allValues.carbs}</p>
-              <p>fiber: {allValues.fiber}</p>
-              <p>sugar: {allValues.sugar}</p>
-              <p>Protein: {allValues.protein}</p>
-          </article>
-          <article id="ingredient-section">
+          <article id="ingredient-article">
             <section>
-              <h2 className="section-header">Greens & Grains</h2>
+              <h2 className="section-header">GREENS & GRAINS</h2>
               {greens.map((item, index)=>{
-                return <button className="ingredient" onClick={() => changeHandler(greens[index].name)}>{greens[index].name}</button>})} 
+                return <button className="ingredient" onClick={() => changeHandler(greens[index].name)}><img src={greens[index].img}/>{greens[index].name}</button>})} 
             </section>
+          </article>
+          <article id="nutrition-article">
+            <p>Calories :{allValues.calories}</p>
+            <p>Fat: {allValues.fat}</p>
+            <p>SatFat: {allValues.satFat}</p>
+            <p>transFat: {allValues.transFat}</p>
+            <p>Cholestreol: {allValues.cholesterol}</p>
+            <p>sodium: {allValues.sodium}</p>
+            <p>carbs: {allValues.carbs}</p>
+            <p>fiber: {allValues.fiber}</p>
+            <p>sugar: {allValues.sugar}</p>
+            <p>Protein: {allValues.protein}</p>
           </article>
         </main>          
         </div>

@@ -13,11 +13,12 @@ main{
     display: flex;
 }
 
-#ingredient-section{
+#ingredient-article{
     width: 60vw;
+    margin: auto 50px;
 }
 
-#nutrition-section{
+#nutrition-article{
     width: 40vw;
 }
 
@@ -26,8 +27,27 @@ main{
         display: block;
     }
 
-    #ingredient-section, #nutrition-section{
+    #ingredient-article, #nutrition-article{
         width: auto;
     }
 }
 
+
+.section-header{
+    padding-bottom: 15px;
+    border-bottom: solid 1px #000;
+}
+
+.ingredient{
+    all: unset;
+    text-align: center;
+    margin: 15px;
+}
+
+.ingredient img{
+    height: 150px;
+}
+
+.ingredient img, .ingredient button{
+    display: grid;
+}
