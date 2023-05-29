@@ -36,6 +36,7 @@ main{
 }
 
 #nutrition-article{
+    padding: 50px 0px 50px 0px;
     width: 40vw;
     background-color: var(--tan);
 }
@@ -75,7 +76,8 @@ main{
     background-color: #fefcf8;
     border: solid 1px #000;
     width: fit-content;
-    margin: 20px 50px;
+    padding: 20px auto;
+    margin: auto;
 }
 
 #nutrition header{
