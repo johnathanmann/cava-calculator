@@ -75,6 +75,26 @@ $(document).one('click', '.ingredient-list-item', function () {
               {greens.map((item, index)=>{
                 return <button className="ingredient" onClick={() => addIngredient(greens[index].name)}><img src={greens[index].img}/><p>{greens[index].name}</p></button>})} 
             </section>
+            <section>
+              <h2 className="section-header">MAINS</h2>
+              {mains.map((item, index)=>{
+                return <button className="ingredient" onClick={() => addIngredient(mains[index].name)}><img src={mains[index].img}/><p>{mains[index].name}</p></button>})} 
+            </section>
+            <section>
+              <h2 className="section-header">TOPPINGS</h2>
+              {toppings.map((item, index)=>{
+                return <button className="ingredient" onClick={() => addIngredient(toppings[index].name)}><img src={toppings[index].img}/><p>{toppings[index].name}</p></button>})} 
+            </section>
+            <section>
+              <h2 className="section-header">DIPS & SPREADS</h2>
+              {dips.map((item, index)=>{
+                return <button className="ingredient" onClick={() => addIngredient(dips[index].name)}><img src={dips[index].img}/><p>{dips[index].name}</p></button>})} 
+            </section>
+            <section>
+              <h2 className="section-header">DIPS & SPREADS</h2>
+              {dressings.map((item, index)=>{
+                return <button className="ingredient" onClick={() => addIngredient(dressings[index].name)}><img src={dressings[index].img}/><p>{dressings[index].name}</p></button>})} 
+            </section>
           </article>
           <article id="nutrition-article">
             <div id="nutrition">
