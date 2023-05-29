@@ -146,7 +146,7 @@ ul{
 .ingredient-list-item{
    display: flex;
    align-items:center;
-   margin: 10px;
+   margin: 20px auto;
 }
 
 .ingredient-list-item img{
@@ -160,6 +160,22 @@ ul{
     padding: 5px 10px;
     margin-left: 10px;
     border-radius: 50px;
+}
+
+#scroll{
+    z-index: 1;
+    position: fixed;
+    bottom: 5%;
+    right: 20px;
+    background-color: var(--light);
+    border: solid 1px #000;
+    border-radius: 100px;
+    padding: 10px;
+}
+
+#scroll button{
+    all: unset;
+    font-size: 20px;
 }
 
 @media (max-width: 768px){

@@ -1,5 +1,6 @@
-import { useState, createElement } from "react";
+import { useState} from "react";
 import $ from 'jquery';
+import { NavLink } from "react-router-dom";
 import "../styles/styles.css";
 import nutrition from "../assets/nutrition.json";
 
@@ -63,6 +64,7 @@ const deleteIngredient = (name) => {
 $(document).one('click', '.ingredient-list-item', function () {
   $(this).closest('li').remove();
 });
+
     return(
       <div>
         <header id="header">
@@ -123,6 +125,11 @@ $(document).one('click', '.ingredient-list-item', function () {
                 return <li className="ingredient-list-item" onClick={() => deleteIngredient(value.name)}><img src={value.img} alt={value.name} /><span>{value.name}</span><span className="delete">x</span></li>})}
             </ul>
           </article>
+          <nav id="scroll">
+          <button onClick={() => {
+          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        }}>Scroll to top</button>
+          </nav>
         </main>          
         </div>
     )
