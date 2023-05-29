@@ -40,16 +40,6 @@ main{
     background-color: var(--tan);
 }
 
-@media (max-width: 768px){
-    main{
-        display: block;
-    }
-
-    #ingredient-article, #nutrition-article{
-        width: auto;
-    }
-}
-
 #header{
     border-bottom: solid 1px #000;
 }
@@ -73,11 +63,12 @@ main{
 
 .ingredient img{
     height: 150px;
+    position: relative;
     margin-bottom: 10px;
 }
 
-.ingredient img, .ingredient button{
-    display: grid;
+.ingredient p{
+    width: 150px;
 }
 
 #nutrition{
@@ -142,16 +133,18 @@ main{
 }
 
 #protein{
-    border: none;
+    border-bottom: solid 5px var(--yellow);
+    margin-bottom: 10px;
 }
 
 ul{
-    display: flex;
-   align-items:center;
+   display: block
 }
 
 .ingredient-list-item{
-    all: unset;
+   display: flex;
+   align-items:center;
+   margin: 10px;
 }
 
 .ingredient-list-item img{
@@ -165,4 +158,29 @@ ul{
     padding: 5px 10px;
     margin-left: 10px;
     border-radius: 50px;
+}
+
+@media (max-width: 768px){
+    main{
+        display: block;
+    }
+
+    #ingredient-article, #nutrition-article{
+        width: auto;
+    }
+    .ingredient img{
+        height: 125px;
+    }
+    .ingredient p{
+        width: 125px;
+    }
+}
+
+@media (max-width: 545px){
+    .ingredient img{
+        height: 100px;
+    }
+    .ingredient p{
+        width: 100px;
+    }
 }

@@ -73,7 +73,7 @@ $(document).one('click', '.ingredient-list-item', function () {
             <section>
               <h2 className="section-header">GREENS & GRAINS</h2>
               {greens.map((item, index)=>{
-                return <button className="ingredient" onClick={() => addIngredient(greens[index].name)}><img src={greens[index].img}/>{greens[index].name}</button>})} 
+                return <button className="ingredient" onClick={() => addIngredient(greens[index].name)}><img src={greens[index].img}/><p>{greens[index].name}</p></button>})} 
             </section>
           </article>
           <article id="nutrition-article">
