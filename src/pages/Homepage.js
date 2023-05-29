@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, createElement } from "react";
 import $ from 'jquery';
 import "../styles/styles.css";
 import nutrition from "../assets/nutrition.json";
@@ -8,6 +8,8 @@ let mains = nutrition.filter(x => x.type === "mains");
 let toppings = nutrition.filter(x => x.type === "toppings");
 let dips = nutrition.filter(x => x.type === "dips + spreads");
 let dressings = nutrition.filter(x => x.type === "dressings");
+
+let ingredients = []
 
 export default function Homepage(){
   const [allValues, setAllValues] = useState({
@@ -25,6 +27,8 @@ export default function Homepage(){
 
  const addIngredient = (e) => {
   let value = nutrition.find(nutrition => nutrition.name === e);
+  ingredients.push(value.name)
+  console.log(ingredients)
   setAllValues(() => ({
     calories: allValues.calories + value.calories,
     fat: allValues.fat + value.fat,
@@ -37,21 +41,28 @@ export default function Homepage(){
     sugar: allValues.sugar + value.sugar,
     protein: allValues.protein + value.protein
 }));
+}
 
-$("#ingredient-list").append('<li class="remove_field">'+'<img src="'+value.img+'" />' + value.name +'</li>')
+const deleteIngredient = (name) => {
+  let value = nutrition.find(nutrition => nutrition.name === name);
+  console.log(ingredients)
+  setAllValues(() => ({
+    calories: allValues.calories - value.calories,
+    fat: allValues.fat - value.fat,
+    satFat: allValues.satFat - value.satFat,
+    transFat: allValues.transFat - value.transFat,
+    cholesterol: allValues.cholesterol - value.cholesterol,
+    sodium: allValues.sodium - value.sodium,
+    carbs: allValues.carbs - value.carbs,
+    fiber: allValues.fiber - value.fiber,
+    sugar: allValues.sugar - value.sugar,
+    protein: allValues.protein - value.protein
+}));
 }
 
 $(document).one('click', '.remove_field', function () {
-  var ingredient = $(this).text();
   $(this).closest('li').remove();
-  let value = nutrition.find(nutrition => nutrition.name === ingredient);
-  console.log(allValues.calories =- value.calories)
-  setAllValues(() => ({
-    calories: allValues.calories + value.calories
-}));
 });
-
-
     return(
       <div>
         <header id="header">
@@ -85,6 +96,11 @@ $(document).one('click', '.remove_field', function () {
               <p className="nutrition-item" id="protein">Protien <span>{allValues.protein}g</span></p>
             </div>
             <ul id="ingredient-list">
+            {ingredients.map((item, index)=>{
+              console.log(item)
+              let value = nutrition.find(nutrition => nutrition.name === item)
+              console.log(value)
+                return <li className="remove_field" onClick={() => deleteIngredient(value.name)}>{value.name}</li>})}
             </ul>
           </article>
         </main>          
