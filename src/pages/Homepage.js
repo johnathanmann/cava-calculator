@@ -1,8 +1,9 @@
 import { useState} from "react";
 import $ from 'jquery';
-import { NavLink } from "react-router-dom";
 import "../styles/styles.css";
 import nutrition from "../assets/nutrition.json";
+import link from "../assets/imgs/link-icon.png";
+import deleteIcon from "../assets/imgs/x-icon.png";
 
 let greens = nutrition.filter(x => x.type === "greens & grains");
 let mains = nutrition.filter(x => x.type === "mains");
@@ -68,7 +69,7 @@ $(document).one('click', '.ingredient-list-item', function () {
     return(
       <div>
         <header id="header">
-            <h1>CAVA Calculator</h1>
+            <h1 className="inline">CAVA Calculator <span><img src={link} alt="Chainlink icon" /><a>Official CAVA Site</a></span></h1>
         </header>
         <main>
           <article id="ingredient-article">
@@ -122,7 +123,7 @@ $(document).one('click', '.ingredient-list-item', function () {
               console.log(item)
               let value = nutrition.find(nutrition => nutrition.name === item)
               console.log(value)
-                return <li className="ingredient-list-item" onClick={() => deleteIngredient(value.name)}><img src={value.img} alt={value.name} /><span>{value.name}</span><span className="delete">x</span></li>})}
+                return <li className="ingredient-list-item" onClick={() => deleteIngredient(value.name)}><img src={value.img} alt={value.name} /><span>{value.name}</span><span className="delete"><img src={deleteIcon} alt="Delete icon with an X" /></span></li>})}
             </ul>
           </article>
           <nav id="scroll">
