@@ -69,7 +69,7 @@ $(document).one('click', '.ingredient-list-item', function () {
     return(
       <div>
         <header id="header">
-            <h1 className="inline">CAVA Calculator <span><img src={link} alt="Chainlink icon" /><a>Official CAVA Site</a></span></h1>
+            <h1 className="inline">CAVA Calculator <span><img src={link} alt="Chainlink icon" /><a href="https://cava.com/nutrition" target="_blank" >Official CAVA Site</a></span></h1>
         </header>
         <main>
           <article id="ingredient-article">
