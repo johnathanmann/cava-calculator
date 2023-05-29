@@ -4,9 +4,24 @@
     --yellow: #F3D03E;
 }
 
+@font-face {
+    font-family: HKGrotesk;
+    src: url(../assets/fonts/HKGrotesk-Regular.otf);
+}
+
+@font-face {
+    font-family: HKGrotesk-Bold;
+    src: url(../assets/fonts/HKGrotesk-Bold.otf);
+}
+
+@font-face {
+    font-family: HKGrotesk-ExtraBold;
+    src: url(../assets/fonts/HKGrotesk-ExtraBold.otf);
+}
+
 body{
     background-color: var(--light);
-    font-family: Helvetica;
+    font-family: HKGrotesk, Arial, Helvetica, sans-serif;
     margin: 0px;
 }
 
@@ -41,11 +56,13 @@ main{
 
 #header h1{
     margin: 20px;
+    font-family: HKGrotesk-ExtraBold, Arial, Helvetica, sans-serif;
 }
 
 .section-header{
     padding-bottom: 15px;
     border-bottom: solid 1px #000;
+    font-family: HKGrotesk-Bold, Arial, Helvetica, sans-serif;
 }
 
 .ingredient{
@@ -64,7 +81,6 @@ main{
 }
 
 #nutrition{
-    position: fixed;
     background-color: #fefcf8;
     border: solid 1px #000;
     width: fit-content;
@@ -75,6 +91,7 @@ main{
     color: var(--yellow);
     font-weight: 800;
     margin: 10px 10px;
+    font-family: HKGrotesk-ExtraBold, Arial, Helvetica, sans-serif;
 }
 
 #nutrition header h1{
@@ -104,21 +121,21 @@ main{
     font-size: 20px;
     font-weight: 900;
     border-bottom: solid 5px var(--yellow);
+    font-family: HKGrotesk-ExtraBold, Arial, Helvetica, sans-serif;
 }
 
 .nutrition-item{
     border-bottom: solid 1px #000;
-    font-weight: 700;
     padding: 10px;
     margin: auto 10px;
+    font-family: HKGrotesk-ExtraBold, Arial, Helvetica, sans-serif;
 }
 
 .nutrition-item span{
-    font-weight: 500;
+    font-family: HKGrotesk, Arial, Helvetica, sans-serif;
 }
 
 .nutrition-item-indent{
-    font-family: 500;
     border-bottom: solid 1px #000;
     padding: 5px 10px 5px 30px;
     margin: auto 10px;
@@ -126,4 +143,26 @@ main{
 
 #protein{
     border: none;
+}
+
+ul{
+    display: flex;
+   align-items:center;
+}
+
+.ingredient-list-item{
+    all: unset;
+}
+
+.ingredient-list-item img{
+    vertical-align: middle;
+    padding-right: 10px;
+    height: 50px;
+}
+
+.delete{
+    border: solid 1px #000;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 50px;
 }

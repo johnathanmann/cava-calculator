@@ -60,7 +60,7 @@ const deleteIngredient = (name) => {
 }));
 }
 
-$(document).one('click', '.remove_field', function () {
+$(document).one('click', '.ingredient-list-item', function () {
   $(this).closest('li').remove();
 });
     return(
@@ -100,7 +100,7 @@ $(document).one('click', '.remove_field', function () {
               console.log(item)
               let value = nutrition.find(nutrition => nutrition.name === item)
               console.log(value)
-                return <li className="remove_field" onClick={() => deleteIngredient(value.name)}>{value.name}</li>})}
+                return <li className="ingredient-list-item" onClick={() => deleteIngredient(value.name)}><img src={value.img} alt={value.name} /><span>{value.name}</span><span className="delete">x</span></li>})}
             </ul>
           </article>
         </main>          
