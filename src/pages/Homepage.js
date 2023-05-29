@@ -99,7 +99,7 @@ $(document).one('click', '.ingredient-list-item', function () {
             </section>
           </article>
           <article id="nutrition-article">
-            <div id="nutrition">
+            <section id="nutrition">
               <header>
                 <h1>Nutritional Information</h1>
                 <p>1 servings per container</p>
@@ -116,7 +116,7 @@ $(document).one('click', '.ingredient-list-item', function () {
               <p className="nutrition-item-indent">Dietary Fiber <span>{allValues.fiber}g</span></p>
               <p className="nutrition-item-indent">Total Sugars <span>{allValues.sugar}g</span></p>
               <p className="nutrition-item" id="protein">Protien <span>{allValues.protein}g</span></p>
-            </div>
+            </section>
             <ul id="ingredient-list">
             {ingredients.map((item, index)=>{
               console.log(item)
@@ -126,9 +126,7 @@ $(document).one('click', '.ingredient-list-item', function () {
             </ul>
           </article>
           <nav id="scroll">
-          <button onClick={() => {
-          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-        }}>Scroll to top</button>
+          <button onClick={() => {window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}}>Scroll to top</button>
           </nav>
         </main>          
         </div>
